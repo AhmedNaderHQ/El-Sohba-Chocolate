@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layout/css/all.min.css" />
+    <link rel="stylesheet" href="layout/css/front-end-en.css" />
+
+    <title>El-Sohba</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="layout/images/2.png" alt="">
+            </a>
+            <div class="iconNav d-lg-none d-flex align-items-center ms-auto">
+
+                <a href="login.html" class="login"><i class="far fa-user"></i></a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="our-team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconNav d-lg-flex d-none align-items-center ms-auto">
+
+                <a href="login.html" class="login"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="login" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fas fa-shopping-cart"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card mb-3 cartNav">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="layout/images/product1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body pt-0">
+                            <p class="nameProductCart text-uppercase mb-0">Name Product</p>
+                            <p class="nameProductCart text-uppercase mb-0">300 EGP</p>
+                            <p>
+                                <button class="btn btn-sm btn-danger rounded-circle"><i class="fas fa-plus"></i></button>
+                                <span class="me-1 ms-1">1</span>
+                                <button class="btn btn-sm btn-danger rounded-circle"><i class="fas fa-minus"></i></button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="text-center ">
+                    <p>Total price : <span id="sum-prices">100</span> EGP</p>
+                    <p>Total item : <span id="sum-Item">2</span></p>
+                </div>
+                <div class="text-center">
+                    <a href="cart.html" aria-label="view cart"><button type="button" class="btn btn-outline-secondary rounded-pill" aria-label="view cart">View cart</button></a>
+                    <a href="checkout.html" aria-label="checkout"><button type="button" class="btn btn-outline-secondary rounded-pill" aria-label="checkout">Checkout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="directionIntroduction">
+        <div>
+            <p>our team</p>
+        </div>
+    </div>
+    <div class="container mt-5 ourTeam">
+        <div class="row">
+            <div class="row row-cols-1 row-cols-lg-5 row-cols-md-4 row-cols-sm-2  g-3">
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AhmedIsmail.png" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Ahmed Ismail</h5>
+                            <div class="socialMember text-center">
+                                <a href="https://www.linkedin.com/in/ahmed-ismail-a03185255/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/AhmedMohIsmail" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100055979297555&locale=ar_AR" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AhmedAbdullah.jpeg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Ahmed Abdullah</h5>
+                            <div class="socialMember text-center">
+                                <a href="https://www.facebook.com/profile.php?id=100082720839872&mibextid=ZbWKwL" target="_blank" title="facebook"><i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ahmed-abdullah-877981244" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
+                                <a href="https://twitter.com/AhmedAb01841812?t=K03ubODQp_HQjdLXEtH_uw&s=09" target="_blank" title="twitter"><i class="fa-brands fa-twitter"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/mazen.jpeg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Mazen Alasas</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.linkedin.com/in/mazen-ahmed-772831244/"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/maznalsas"><i class="fab fa-facebook"></i></a>
+                                <a target="_blank" href="https://github.com/mazen-alasas"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AbdelrahmanRefaat.jpg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Abdelrahman Refaat</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.linkedin.com/in/abdelrahman-elgamal-b5b8832a3/"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://github.com/AbdoElgamal"><i class="fa-brands fa-github"></i></a>
+                                <a target="_blank" href="https://twitter.com/abdoo3423"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AhmedNader.jpg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Ahmed Nader</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100054814093633&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/ahmed-nader-8a0a2529a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://github.com/AhmedNaderHQ"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AbdulrahmanMohamed.png" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Abdulrahman Mohamed</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.linkedin.com/in/abdo-saad-7a4b932a2/"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://web.facebook.com/profile.php?id=100067104798039"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/ZiadMohamed.jpg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Ziad Mohamed</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.linkedin.com/in/ziad-mohamed-759a73240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/ziiadmohamedtaha?mibextid=9R9pXO"><i class="fab fa-facebook"></i></a>
+                                <a target="_blank" href="https://x.com/ziadtahaaa?t=WDjLHAIjMuPEZBqt8P64gg&s=09"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AhmedElsherbiny.jpg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Ahmed Elsherbiny</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.linkedin.com/in/ahmed-elsherbiny-/"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100085563128384"><i class="fab fa-facebook"></i></a>
+                                <a target="_blank" href="https://github.com/AhmedElsherbiny2"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AbdulrahmanAziz.jpg" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Abdulrahman Adel</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://eg.linkedin.com/in/abdulrahman-abdelazez-36808020a"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/aboda.adel.12?mibextid=GoaLI4isD9cHbeUg"><i class="fab fa-facebook"></i></a>
+                                <a target="_blank" href="https://twitter.com/Abdo_3ziiz"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card member">
+                        <img src="layout/images/AbdulrahmanElmahdy.png" class="card-img-top rounded-circle p-3" alt="...">
+                        <div class="card-body ps-0 pe-0">
+                            <h5 class="card-title text-center text-capitalize fw-bold">Abdulrahman Elmahdy</h5>
+                            <div class="socialMember text-center">
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100058236901493&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div style="position: absolute;top: -4px;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer-section mt-5">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget company-intro-widget">
+                            <a href="./" class="site-logo"><img src="layout/images/2.png" alt="logo"></a>
+                            <p>DON'T STOP EATING.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget course-links-widget">
+                            <h5 class="widget-title">Links</h5>
+                            <ul class="courses-link-list">
+                                <li><a href="product.html"><i class="fas fa-angle-right iconRightFooter"></i>
+                                        Name Product
+                                    </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget latest-news-widget">
+                            <h5 class="widget-title">Contact Us</h5>
+                            <ul class="small-post-list">
+                                <li>
+                                    <div class="small-post-item">
+                                        <p><a href="tel:+201018937747"><i class="fa fa-phone"></i> +201018937747</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-post-item">
+                                        <p><a href="tel:+201016143399"><i class="fa fa-phone"></i> +201016143399</a></p>
+                                    </div>
+                                </li>
+                                <ul class="company-footer-contact-list">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 text-sm-left text-center pt-2 pb-2">
+                        <span class="copy-right-text">© 2023 El-Sohba All
+                            Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="layout/js/jquery-3.6.0.min.js"></script>
+    <script src="layout/js/all.min.js"></script>
+    <script src="layout/js/bootstrap.bundle.min.js"></script>
+    <script src="layout/js/front-end.js"></script>
+</body>
+
+</html>

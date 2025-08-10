@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layout/css/all.min.css" />
+    <link rel="stylesheet" href="layout/css/front-end-en.css" />
+
+    <title>El-Sohba</title>
+</head>
+
+<body>
+    <div class="direction mt-0">
+        <div>
+            <p>login </p>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-9 col-12">
+                <form id="loginForm">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInputUserName" required name="userInfo"
+                            placeholder="Username*">
+                        <label for="floatingInputUserName">Username* / Email*</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingInputPassword" required name="password"
+                            placeholder="Password*">
+                        <label for="floatingInputPassword">Password*</label>
+                        <div>
+                            <input type="checkbox" onclick="togglePassword()" id="checkboxPass">
+                            <label for="checkboxPass">Show Password</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button"
+                            class="btn btn-danger rounded-pill w-100 fw-bold text-uppercase" onclick="login()">Login</button>
+                    </div>
+                </form>
+                <p class="text-center mt-4">I do not have an account ? <a href="register.html">register now </a></p>
+                <div class="p-1 Copyright text-center">
+                    <p>© 2023 El-Sohba All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="layout/js/jquery-3.6.0.min.js"></script>
+    <script src="layout/js/all.min.js"></script>
+    <script src="layout/js/bootstrap.bundle.min.js"></script>
+    <script src="layout/js/front-end.js"></script>
+
+</body>
+
+</html>

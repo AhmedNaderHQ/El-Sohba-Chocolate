@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layout/css/all.min.css" />
+    <link rel="stylesheet" href="layout/css/front-end-en.css" />
+
+    <title>El-Sohba</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="layout/images/2.png" alt="">
+            </a>
+            <div class="iconNav d-lg-none d-flex align-items-center ms-auto">
+
+                <a href="login.html" class="login"><i class="far fa-user"></i></a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="our-team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconNav d-lg-flex d-none align-items-center ms-auto">
+
+                <a href="login.html" class="login"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="login" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fas fa-shopping-cart"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card mb-3 cartNav">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="layout/images/product1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body pt-0">
+                            <p class="nameProductCart text-uppercase mb-0">Name Product</p>
+                            <p class="nameProductCart text-uppercase mb-0">100 EGP</p>
+                            <p>
+                                <button class="btn btn-sm btn-danger rounded-circle"><i
+                                        class="fas fa-plus"></i></button>
+                                <span class="me-1 ms-1">1</span>
+                                <button class="btn btn-sm btn-danger rounded-circle"><i
+                                        class="fas fa-minus"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="text-center ">
+                    <p>Total price : <span id="sum-prices">100</span> EGP</p>
+                    <p>Total item : <span id="sum-Item">2</span></p>
+                </div>
+                <div class="text-center">
+                    <a href="cart.html" aria-label="view cart"><button type="button"
+                            class="btn btn-outline-secondary rounded-pill" aria-label="view cart">View cart</button></a>
+                    <a href="checkout.html" aria-label="checkout"><button type="button"
+                            class="btn btn-outline-secondary rounded-pill" aria-label="checkout">Checkout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="directionIntroduction">
+        <div>
+            <p>Checkout</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 col-lg-4 col-12 d-block d-md-none">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-danger text-uppercase">Your cart</span>
+                    <span class="badge bg-danger rounded-pill total-items">0</span>
+                </h4>
+                <ul class="list-group mb-0 product-list">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Name Product</h6>
+                        </div>
+                        <span class="text-muted">300 EGP</span>
+                    </li>
+                </ul>
+                <ul class="list-group mb-3 product-list-total">
+                    <li class="list-group-item d-flex justify-content-between total-items-price">
+                        <span>Total (EGP)</span>
+                        <strong class="total-price">0</strong>
+                    </li>
+                </ul>
+                <ul class="list-group mb-3 coupon-ul d-none">
+                    <li class="list-group-item d-flex justify-content-between bg-light details-li">
+                        <div class="text-success">
+                            <h6 class="my-0">Promo code</h6>
+                            <small class="couponName"></small>
+                        </div>
+                        <span class="text-success"><span class="couponValue"></span> <br><span class="removeCoupon"
+                                title="Remove coupon"><i class="fa-solid fa-trash"
+                                    style="cursor: pointer;color: #c60000;margin-left: 1.2rem;"></i></span></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (EGP)</span>
+                        <strong class="total-price">0</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2 couponForm">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="coupon" placeholder="Promo code">
+                        <button type="submit" class="btn btn-secondary" aria-label="promo code" required>Redeem</button>
+                    </div>
+                    <P class="text-danger mb-0"></P>
+                </form>
+            </div>
+            <div class="col-lg-8 col-md-7 col-12 mt-5">
+                <form class="checkoutForm" action="checkout" method="POST">
+                    <div class="user-products" hidden>
+                        <textarea name="user-products" style="width: 100%"></textarea>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="name" id="floatingName" placeholder="Name"
+                            required>
+                        <label for="floatingName">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="floatingEmail"
+                            placeholder="name@example.com" required>
+                        <label for="floatingEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" name="shipping_area" id="floatingSelect"
+                            aria-label="Floating label select example" required>
+                            <option selected disabled>Open this select menu</option>
+                            <option value="1">cairo - EGP 40</option>
+                            <option value="2">Alexandria - EGP 60</option>
+                            <option value="4">sahel - EGP 80</option>
+                            <option value="5">Behira - EGP 60</option>
+                            <option value="6">Dakhlia - EGP 60</option>
+                            <option value="7">Elkalioubia - EGP 60</option>
+                            <option value="8">Gharbia - EGP 60</option>
+                            <option value="9">Kafr alsheikh - EGP 60</option>
+                            <option value="10">Monufia - EGP 60</option>
+                            <option value="11">sharqia - EGP 60</option>
+                            <option value="12">Isamilia - EGP 60</option>
+                            <option value="13">Suez - EGP 60</option>
+                            <option value="14">port saied - EGP 60</option>
+                            <option value="15">Fayoum - EGP 60</option>
+                            <option value="16">Bani suif - EGP 80</option>
+                            <option value="17">Asyut - EGP 80</option>
+                            <option value="18">Sohage - EGP 80</option>
+                            <option value="19">Menya - EGP 80</option>
+                            <option value="20">Qena - EGP 80</option>
+                            <option value="21">Aswan - EGP 90</option>
+                            <option value="22">Loxr - EGP 90</option>
+                            <option value="23">Sharm Elsheikh - EGP 90</option>
+                            <option value="24">Matrouh - EGP 90</option>
+                            <option value="25">Hurgda - EGP 75</option>
+                            <option value="26">Red sea - EGP 75</option>
+                            <option value="27">safaga - EGP 75</option>
+                        </select>
+                        <label for="floatingSelect">shipping to</label>
+                        </P>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="address" id="floatingAddress"
+                            placeholder="Address" required>
+                        <label for="floatingAddress">Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="phone" maxlength="11" pattern="[0-9]{11}"
+                            id="floatingPhone" placeholder="Phone" required>
+                        <label for="floatingPhone">Phone number</label>
+                    </div>
+                    <button type="submit" class="btn btn-danger AddToCart w-100 rounded-pill mt-4" aria-label="Checkout">Checkout</button>
+                </form>
+            </div>
+            <div class="col-md-5 col-lg-4 col-12 d-none d-md-block">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-danger text-uppercase">Your cart</span>
+                    <span class="badge bg-danger rounded-pill total-items">0</span>
+                </h4>
+                <ul class="list-group mb-0 product-list">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Name Product</h6>
+                        </div>
+                        <span class="text-muted">300 EGP</span>
+                    </li>
+
+                </ul>
+                <ul class="list-group mb-3 product-list-total">
+                    <li class="list-group-item d-flex justify-content-between total-items-price">
+                        <span>Total (EGP)</span>
+                        <strong class="total-price">300</strong>
+                    </li>
+                </ul>
+                <ul class="list-group mb-3 coupon-ul d-none">
+                    <li class="list-group-item d-flex justify-content-between bg-light details-li">
+                        <div class="text-success">
+                            <h6 class="my-0">Promo code</h6>
+                            <small class="couponName"></small>
+                        </div>
+                        <span class="text-success"><span class="couponValue"></span> <br><span class="removeCoupon"
+                                title="Remove coupon"><i class="fa-solid fa-trash"
+                                    style="cursor: pointer;color: #c60000;margin-left: 1.2rem;"></i></span></span>
+
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (EGP)</span>
+                        <strong class="total-price">0</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2 couponForm">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="coupon" placeholder="Promo code">
+
+                        <button type="submit" class="btn btn-secondary" aria-label="promo code" required>Redeem</button>
+                    </div>
+                    <P class="text-danger mb-0"></P>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer-section mt-5">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget company-intro-widget">
+                            <a href="./" class="site-logo"><img src="layout/images/2.png" alt="logo"></a>
+                            <p>DON'T STOP EATING.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget course-links-widget">
+                            <h5 class="widget-title">Links</h5>
+                            <ul class="courses-link-list">
+                                <li><a href="product.html"><i class="fas fa-angle-right iconRightFooter"></i>
+                                        Name Product
+                                    </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget latest-news-widget">
+                            <h5 class="widget-title">Contact Us</h5>
+                            <ul class="small-post-list">
+                                <li>
+                                    <div class="small-post-item">
+                                        <p><a href="tel:+201018937747"><i class="fa fa-phone"></i> +201018937747</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-post-item">
+                                        <p><a href="tel:+201016143399"><i class="fa fa-phone"></i> +201016143399</a></p>
+                                    </div>
+                                </li>
+                                <ul class="company-footer-contact-list">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 text-sm-left text-center pt-2 pb-2">
+                        <span class="copy-right-text">© 2023 El-Sohba All
+                            Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="layout/js/jquery-3.6.0.min.js"></script>
+    <script src="layout/js/all.min.js"></script>
+    <script src="layout/js/bootstrap.bundle.min.js"></script>
+    <script src="layout/js/front-end.js"></script>
+</body>
+
+</html>

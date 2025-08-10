@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layout/css/all.min.css" />
+    <link rel="stylesheet" href="layout/css/front-end-en.css" />
+
+    <title>El-Sohba</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="layout/images/2.png" alt="">
+            </a>
+            <div class="iconNav d-lg-none d-flex align-items-center ms-auto">
+
+                <a href="login.html" class="login"><i class="far fa-user"></i></a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="our-team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconNav d-lg-flex d-none align-items-center ms-auto">
+
+                <a href="login.html" class="login"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="login" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fas fa-shopping-cart"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card mb-3 cartNav">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="layout/images/product1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body pt-0">
+                            <p class="nameProductCart text-uppercase mb-0">Name Product</p>
+                            <p class="nameProductCart text-uppercase mb-0">100 EGP</p>
+                            <p>
+                                <button class="btn btn-sm btn-danger rounded-circle"><i
+                                        class="fas fa-plus"></i></button>
+                                <span class="me-1 ms-1">1</span>
+                                <button class="btn btn-sm btn-danger rounded-circle"><i
+                                        class="fas fa-minus"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="text-center ">
+                    <p>Total price : <span id="sum-prices">100</span> EGP</p>
+                    <p>Total item : <span id="sum-Item">2</span></p>
+                </div>
+                <div class="text-center">
+                    <a href="cart.html" aria-label="view cart"><button type="button"
+                            class="btn btn-outline-secondary rounded-pill" aria-label="view cart">View cart</button></a>
+                    <a href="checkout.html" aria-label="checkout"><button type="button"
+                            class="btn btn-outline-secondary rounded-pill" aria-label="checkout">Checkout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="directionIntroduction">
+        <div>
+            <p>Name Product</p>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="card mb-3" style="border: none;">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="layout/images/product1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body pt-0">
+                            <p class="namePageProduct fw-bold text-uppercase">Name Product</p>
+                            <p style="font-size: 1.3rem;">300 EGP</p>
+                            <p>
+                                <button class="plusAndMinus btn btn-sm btn-danger rounded-circle"><i
+                                        class="fas fa-plus"></i></button>
+                                <span class="me-1 ms-1">1</span>
+                                <button class="plusAndMinus btn btn-sm btn-danger rounded-circle"><i
+                                        class="fas fa-minus"></i></button>
+                            </p>
+                            <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                <option selected disabled>Choose Size</option>
+                                <option value="1">XS</option>
+                                <option value="2">S</option>
+                                <option value="3">L</option>
+                                <option value="4">XL</option>
+                            </select>
+                            <div class="row">
+                                <div class="col-10">
+                                    <a href="product.html" class="btn btn-danger rounded-pill w-100 AddToCart">Add to
+                                        card</a>
+                                </div>
+                                <div class="col-2 p-0">
+                                    <a href="#" class="btn btn-danger rounded-pill w-100 star p-0"><i
+                                            class="far fa-star"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 products">
+        <h2 class="text-uppercase fw-bold text-center mb-4">trendy products</h2>
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-3">
+            <div class="col product col-xsm-6 mt-4">
+                <div class="card">
+                    <img src="layout/images/5.png" class="card-img-top" alt="...">
+                    <div class="titleProduct">
+                        <p class="nameProduct fw-bold text-center text-uppercase">Name Product</p>
+                        <div class="row">
+                            <div class="col-10">
+                                <a href="product.html" class="btn btn-danger rounded-pill w-100 AddToCart">Add to
+                                    card</a>
+                            </div>
+                            <div class="col-2 p-0">
+                                <a href="#" class="btn btn-danger rounded-pill w-100 star p-0"><i
+                                        class="far fa-star"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="badge bg-danger">30 EGP</span>
+                    <span class="badge bg-danger sale">10% Sale</span>
+
+                </div>
+
+            </div>
+            <div class="col product col-xsm-6 mt-4">
+                <div class="card">
+                    <img src="layout/images/6.png" class="card-img-top" alt="...">
+                    <div class="titleProduct">
+                        <p class="nameProduct fw-bold text-center text-uppercase">Name Product</p>
+                        <div class="row">
+                            <div class="col-10">
+                                <a href="product.html" class="btn btn-danger rounded-pill w-100 AddToCart">Add to
+                                    card</a>
+                            </div>
+                            <div class="col-2 p-0">
+                                <a href="#" class="btn btn-danger rounded-pill w-100 star p-0"><i
+                                        class="far fa-star"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="badge bg-danger">30 EGP</span>
+                    <span class="badge bg-danger sale">10% Sale</span>
+
+                </div>
+
+            </div>
+            <div class="col product col-xsm-6 mt-4">
+                <div class="card">
+                    <img src="layout/images/7.png" class="card-img-top" alt="...">
+                    <div class="titleProduct">
+                        <p class="nameProduct fw-bold text-center text-uppercase">Name Product</p>
+                        <div class="row">
+                            <div class="col-10">
+                                <a href="product.html" class="btn btn-danger rounded-pill w-100 AddToCart">Add to
+                                    card</a>
+                            </div>
+                            <div class="col-2 p-0">
+                                <a href="#" class="btn btn-danger rounded-pill w-100 star p-0"><i
+                                        class="far fa-star"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="badge bg-danger">30 EGP</span>
+                    <span class="badge bg-danger sale">10% Sale</span>
+
+                </div>
+
+            </div>
+            <div class="col product col-xsm-6 mt-4">
+                <div class="card">
+                    <img src="layout/images/8.png" class="card-img-top" alt="...">
+                    <div class="titleProduct">
+                        <p class="nameProduct fw-bold text-center text-uppercase">Name Product</p>
+                        <div class="row">
+                            <div class="col-10">
+                                <a href="product.html" class="btn btn-danger rounded-pill w-100 AddToCart">Add to
+                                    card</a>
+                            </div>
+                            <div class="col-2 p-0">
+                                <a href="#" class="btn btn-danger rounded-pill w-100 star p-0"><i
+                                        class="far fa-star"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="badge bg-danger">30 EGP</span>
+                    <span class="badge bg-danger sale">10% Sale</span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-section mt-5">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget company-intro-widget">
+                            <a href="./" class="site-logo"><img src="layout/images/2.png" alt="logo"></a>
+                            <p>DON'T STOP EATING.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget course-links-widget">
+                            <h5 class="widget-title">Links</h5>
+                            <ul class="courses-link-list">
+                                <li><a href="product.html"><i class="fas fa-angle-right iconRightFooter"></i>
+                                        Name Product
+                                    </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget latest-news-widget">
+                            <h5 class="widget-title">Contact Us</h5>
+                            <ul class="small-post-list">
+                                <li>
+                                    <div class="small-post-item">
+                                        <p><a href="tel:+201018937747"><i class="fa fa-phone"></i> +201018937747</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-post-item">
+                                        <p><a href="tel:+201016143399"><i class="fa fa-phone"></i> +201016143399</a></p>
+                                    </div>
+                                </li>
+                                <ul class="company-footer-contact-list">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 text-sm-left text-center pt-2 pb-2">
+                        <span class="copy-right-text">© 2023 El-Sohba All
+                            Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="layout/js/jquery-3.6.0.min.js"></script>
+    <script src="layout/js/all.min.js"></script>
+    <script src="layout/js/bootstrap.bundle.min.js"></script>
+    <script src="layout/js/front-end.js"></script>
+</body>
+
+</html>
